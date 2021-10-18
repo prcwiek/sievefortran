@@ -37,3 +37,15 @@ vignettes/*.pdf
 
 # R Environment Variables
 .Renviron
+
+# Additional
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Rbuildignore
+src/*.o
+src/*.so
+src/*.dll
+src/*.mod
+other/
