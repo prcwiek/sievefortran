@@ -1,0 +1,14 @@
+PKG_LIBS = $(LAPACK_LIBS) $(BLAS_LIBS) $(FLIBS)
+
+C_OBJS = sievefortran_init.o
+FT_OBJS = sieveeratosthenes.o
+
+all:
+	@$(MAKE) $(SHLIB)
+	@rm -f *.mod *.o
+
+$(SHLIB): $(FT_OBJS) $(C_OBJS)
+
+sievefortran_init.o: sieveeratosthenes.o
+
+

@@ -1,0 +1,12 @@
+Package: sievefortran
+Type: Package
+Title: Sieve of Eratosthenes in Fortran
+Version: 0.0.0.9000
+Author: Pawel Cwiek [cre, aut]
+Maintainer: Pawel Cwiek <prc.altodato@gmail.com>
+Description: Example of using Fortran procedure in R
+License: The Unlicense
+Encoding: UTF-8
+LazyData: true
+NeedsCompilation: yes
+RoxygenNote: 7.1.2
