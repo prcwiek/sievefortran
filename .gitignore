@@ -19,6 +19,7 @@
 
 # RStudio files
 .Rproj.user/
+*.Rproj
 
 # produced vignettes
 vignettes/*.html
@@ -44,6 +45,7 @@ vignettes/*.pdf
 .RData
 .Ruserdata
 .Rbuildignore
+
 src/*.o
 src/*.so
 src/*.dll
