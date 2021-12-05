@@ -1,16 +1,18 @@
 subroutine sieveeratosthenes(n, B)
 		implicit none
 		integer :: i, j, k, n
-		
+
 		real :: limit
 
-		logical :: A(n) 
+		logical :: A(n)
 
-		integer:: B(0:n) 
+		integer:: B(0:n)
 
 		do i = 1, n
 			A(i) = .true.
 		end do
+
+    A(1) = .false.
 
 		i = 2
 		limit = sqrt(real(n))
@@ -35,7 +37,7 @@ subroutine sieveeratosthenes(n, B)
 			end if
 		end do
 
-		k = 0	
+		k = 0
 		do i = 1, n
 			if (A(i) .eqv. .true.) then
 				B(k) = i
